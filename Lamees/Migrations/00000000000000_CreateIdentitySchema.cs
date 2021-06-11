@@ -132,7 +132,7 @@ namespace Lamees.Migrations
                 {
                     UserId = table.Column<string>(nullable: false,maxLength: 191),
                     LoginProvider = table.Column<string>(maxLength: 191, nullable: false),
-                    Name = table.Column<string>(maxLength: 128, nullable: false),
+                    Name = table.Column<string>(maxLength: 191, nullable: false),
                     Value = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
