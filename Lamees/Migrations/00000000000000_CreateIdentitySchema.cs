@@ -12,8 +12,8 @@ namespace Lamees.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false,maxLength: 191),
-                    Name = table.Column<string>(maxLength: 256, nullable: true),
-                    NormalizedName = table.Column<string>(maxLength: 256, nullable: true),
+                    Name = table.Column<string>(maxLength: 191, nullable: true),
+                    NormalizedName = table.Column<string>(maxLength: 191, nullable: true),
                     ConcurrencyStamp = table.Column<string>(nullable: true)
                 },
                 constraints: table => { table.PrimaryKey("PK_AspNetRoles", x => x.Id); });
@@ -23,10 +23,10 @@ namespace Lamees.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false,maxLength: 191),
-                    UserName = table.Column<string>(maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
-                    Email = table.Column<string>(maxLength: 256, nullable: true),
-                    NormalizedEmail = table.Column<string>(maxLength: 256, nullable: true),
+                    UserName = table.Column<string>(maxLength: 191, nullable: true),
+                    NormalizedUserName = table.Column<string>(maxLength: 191, nullable: true),
+                    Email = table.Column<string>(maxLength: 191, nullable: true),
+                    NormalizedEmail = table.Column<string>(maxLength: 191, nullable: true),
                     EmailConfirmed = table.Column<bool>(nullable: false),
                     PasswordHash = table.Column<string>(nullable: true),
                     SecurityStamp = table.Column<string>(nullable: true),
